@@ -1,0 +1,1 @@
+Run `./demo/run` with PySide6 installed. This renders the actual QML using explicit host stubs and labelled fictional data. It checks open, repeated-open, close and Escape. Process stubs do not execute commands. This is not live Quattro acceptance.

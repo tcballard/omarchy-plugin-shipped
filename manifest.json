@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.tcballard.shipped",
+  "name": "Shipped",
+  "version": "0.1.0-preview.1",
+  "author": "Tom Ballard",
+  "license": "Apache-2.0",
+  "description": "Commits and optional merged pull requests",
+  "kinds": [
+    "bar-widget",
+    "service"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "service": "Service.qml"
+  },
+  "barWidget": {
+    "displayName": "Shipped",
+    "description": "Commits and optional merged pull requests",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {},
+    "schema": []
+  }
+}
