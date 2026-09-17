@@ -1,0 +1,51 @@
+{
+  "errors": [],
+  "root": "/workspace/scratch/99f856454865/prepared/omarchy-shipped",
+  "security": {
+    "capabilities": [
+      {
+        "code": "package-manager",
+        "level": "capability",
+        "message": "Package-manager installation behavior requires review.",
+        "path": "README.md"
+      },
+      {
+        "code": "privilege",
+        "level": "capability",
+        "message": "Privilege-tool reference requires inspection, including negated documentation; this advisory match does not prove execution or predict marketplace approval.",
+        "path": "scripts/validate_plugin.py"
+      },
+      {
+        "code": "service-management",
+        "level": "capability",
+        "message": "System service-management behavior requires review.",
+        "path": "scripts/validate_plugin.py"
+      },
+      {
+        "code": "sudoers-modification",
+        "level": "capability",
+        "message": "Sudoers policy behavior requires complete manual review.",
+        "path": "scripts/validate_plugin.py"
+      },
+      {
+        "code": "qml-process",
+        "level": "capability",
+        "message": "QML process execution requires manual review.",
+        "path": "lib/qml/StackProcess.qml"
+      }
+    ],
+    "disclaimer": "Advisory deterministic checks only; not a security audit, certification, warranty, endorsement, or marketplace result.",
+    "findings": [
+      {
+        "code": "cargo-git-unpinned",
+        "level": "finding",
+        "message": "cargo install --git is not pinned to a full 40-character revision.",
+        "path": "scripts/validate_plugin.py"
+      }
+    ],
+    "outcome": "needs-fixes",
+    "scanned": true
+  },
+  "valid": true,
+  "warnings": []
+}

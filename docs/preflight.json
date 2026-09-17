@@ -1,0 +1,62 @@
+{
+  "disclaimer": "Static checks are evidence, not a security audit or compatibility guarantee.",
+  "items": [
+    {
+      "code": "cargo-git-unpinned",
+      "detail": "scripts/validate_plugin.py",
+      "level": "error",
+      "message": "cargo install --git is not pinned to a full 40-character revision."
+    },
+    {
+      "code": "cargo-git-unpinned",
+      "detail": "docs/security.json",
+      "level": "error",
+      "message": "cargo install --git is not pinned to a full 40-character revision."
+    },
+    {
+      "code": "package-manager",
+      "detail": "README.md",
+      "level": "warning",
+      "message": "Package-manager installation behavior requires review."
+    },
+    {
+      "code": "privilege",
+      "detail": "scripts/validate_plugin.py",
+      "level": "warning",
+      "message": "Privilege-tool reference requires inspection, including negated documentation; this advisory match does not prove execution or predict marketplace approval."
+    },
+    {
+      "code": "service-management",
+      "detail": "scripts/validate_plugin.py",
+      "level": "warning",
+      "message": "System service-management behavior requires review."
+    },
+    {
+      "code": "sudoers-modification",
+      "detail": "scripts/validate_plugin.py",
+      "level": "warning",
+      "message": "Sudoers policy behavior requires complete manual review."
+    },
+    {
+      "code": "qml-process",
+      "detail": "lib/qml/StackProcess.qml",
+      "level": "warning",
+      "message": "QML process execution requires manual review."
+    },
+    {
+      "code": "sudoers-modification",
+      "detail": "docs/security.json",
+      "level": "warning",
+      "message": "Sudoers policy behavior requires complete manual review."
+    },
+    {
+      "code": "git-repository",
+      "detail": "fatal: not a git repository (or any of the parent directories): .git",
+      "level": "error",
+      "message": "Plugin must be in a Git repository."
+    }
+  ],
+  "mutated": false,
+  "ok": false,
+  "plugin_dir": "/workspace/scratch/99f856454865/prepared/omarchy-shipped"
+}

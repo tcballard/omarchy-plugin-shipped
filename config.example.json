@@ -1,0 +1,10 @@
+{
+  "roots": [
+    "~/code"
+  ],
+  "depth": 3,
+  "authorEmails": [],
+  "weekStart": 1,
+  "remote": false,
+  "excludeCoauthored": false
+}

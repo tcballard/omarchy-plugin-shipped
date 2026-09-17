@@ -1,0 +1,1 @@
+Plugins run unsandboxed as your user. This candidate has no public private-reporting route yet; report vulnerabilities privately to the maintainer rather than publishing sensitive details. A static scan is not a security audit. See README for file, process and network behavior.
