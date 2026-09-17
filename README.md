@@ -1,5 +1,3 @@
-Reads local Git history and configured author identities; writes ~/.local/state/shipped; executes local CLI collectors and explicit actions; no network by default; opt-in gh queries use GitHub and opening a PR uses the browser; no root.
-
 # Shipped
 
 <p>
@@ -8,7 +6,26 @@ Reads local Git history and configured author identities; writes ~/.local/state/
 <a href="https://github.com/tcballard/omarchy-badges"><img alt="Built for Omarchy: Plugin" height="20" src="https://raw.githubusercontent.com/tcballard/omarchy-badges/75975e5b5bf75e7ede3764bcd2950046f7abfe2c/badges/v1/omarchy-plugin.svg"></a>
 </p>
 
-**Development preview 0.1.0-preview.1** — built using Omarchy Plugin Skills v0.4.0.
+**See what you shipped.**
+
+A native Omarchy bar plugin for developers who want a view of their day or week across local Git repositories. See commits attributed to your configured email addresses, their subjects and line changes. Opt into merged-PR and review-request counts through your existing GitHub CLI login.
+
+On Omarchy Quattro, with the dependencies below installed:
+
+```sh
+omarchy plugin add https://github.com/tcballard/omarchy-plugin-shipped.git
+```
+
+Then [enable the plugin and add its bar widget](#use).
+
+**Development preview · 0.1.0-preview.1.** Portable tests and QML fixture checks pass; live Omarchy acceptance is still outstanding. [Verification](VERIFICATION.md) · [Current limits](docs/STATUS.md) · [View the fixture preview](preview.png).
+
+<details>
+<summary>Files, processes and network access</summary>
+
+Reads local Git history and configured author identities; writes ~/.local/state/shipped; executes local CLI collectors and explicit actions; no network by default; opt-in gh queries use GitHub and opening a PR uses the browser; no root.
+
+</details>
 
 Dependencies (review and install yourself):
 
